@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PROFESSOR MATCHING</title>
+
+    <script src="angular/libraries/angular.min.js"></script>
+    <script src="angular/libraries/ui-router.js"></script>
+    <script src="angular/app.js"></script>
+
+    <script src="angular/controllers/profDetailscontroller.js"></script>
+    <script src="angular/controllers/signUpcontroller.js"></script>
+    <script src="angular/controllers/studDetailscontroller.js"></script>
+    <script src="angular/controllers/studentListcontroller.js"></script>
+</head>
+<body data-ng-app="myApp">
+<nav class="navbar">
+    <div class="container">
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a ui-sref="signUp">sign up</a>
+                </li>
+                <li>
+                    <a ui-sref="profDetails">professor details</a>
+                </li>
+                <li>
+                    <a ui-sref="studDetails">student details</a>
+                </li>
+                <li>
+                    <a ui-sref="studentList">list</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<ui-view></ui-view>
+</body>
+</html>

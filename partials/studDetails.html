@@ -1,0 +1,146 @@
+<h1><mark><i>STUDENT DETAILS</i></mark></h1>
+<style>
+    input{
+        background-color: lightblue;
+    }
+</style>
+<div class="container container-table">
+    <div class="cont vertical-center-row">
+        <form class="myForm" name="detailsForm">
+            <h3 class="text-center form-group"><mark>Student Basic Information</mark></h3>
+            <div class="form-group">
+                <h4>username:</h4>
+                <input class="form-group" name="username" type="text" ng-model="username" placeholder="Enter username" required>
+                <span style="color:red">This is Required</span>
+            </div>
+            <div class="form-group">
+                <h4>firstName:</h4>
+                <input class="form-group" name="firstName" type="text" ng-model="firstName" placeholder="Enter FirstName">
+            </div>
+            <div class="form-group">
+                <h4>lastName:</h4>
+                <input class="form-group" name="lastName" type="text" ng-model="lastName" placeholder="Enter lastName">
+            </div>
+            <div class="form-group">
+                <h4>State:</h4>
+                <input class="form-group" name="state" type="text" ng-model="state" placeholder="Enter State">
+            </div>
+            <div class="form-group">
+                <h4>City:</h4>
+                <input class="form-group" name="city" type="text" ng-model="city" placeholder="Enter City">
+            </div>
+            <div class="form-group">
+                <h4>Gender:</h4>
+                <input class="form-group" name="gender" type="text" ng-model="gender" placeholder="Enter Gender">
+            </div>
+            <div class="form-group">
+                <h4>Age:</h4>
+                <input class="form-group" name="age" type="number" ng-model="age" placeholder="Enter Age">
+                <span style="color:red">This is Required</span>
+            </div>
+            <div class="form-group">
+                <h4>MobileNo:</h4>
+                <input class="form-group" name="mobileNo" type="text" ng-model="mobileNo" placeholder="Enter Mobile Number">
+            </div>
+        </form>
+        <form class="myForm2" name="detailsForm">
+            <h3 class="text-center form-group"><mark>Student Detailed Information</mark></h3>
+            <div class="form-group">
+                <h4>Username:</h4>
+                <input class="form-group" name="username" type="text" ng-model="username" placeholder="Enter Username">
+            </div>
+            <div class="form-group">
+                <h4>Years Of Study</h4>
+                <input class="form-group" name="yearOfStudy" type="number" ng-model="yearOfStudy" placeholder="Enter Years Of Study">
+                <span style="color:red">This is Required</span>
+            </div>
+            <div class="form-group">
+                <h4>CGPA</h4>
+                <input class="form-group" name="cgpa" type="number" ng-model="cgpa" placeholder="Enter Cgpa">
+                <span style="color:red">This is Required</span>
+            </div>
+            <div class="form-group">
+                <h4>Branch:</h4>
+                <input class="form-group" name="branch" type="text" ng-model="branch" placeholder="Enter Branch">
+            </div>
+            <div class="form-group">
+                <h4>Institute:</h4>
+                <input class="form-group" name="institute" type="text" ng-model="institute" placeholder="Enter Institute">
+            </div>
+            <h3>Enter Work Experience(if any)</h3>
+            <div class="form-group">
+                <h4>Organisation:</h4>
+                <input class="form-group" name="organisation" type="text" ng-model="organisation" placeholder="enter organisation"
+            </div>
+            <div class="form-group">
+                <h4>Duration:</h4>
+                <input class="form-group" name="duration" type="number" ng-model="duration" placeholder="enter duration"
+            </div>
+            <div class="form-group">
+                <h4>Description:</h4>
+                <input class="form-group" name="description" type="text" ng-model="description" placeholder="enter description"
+            </div>
+            <h3>Enter Publications(if any)</h3>
+            <div class="form-group">
+                <h4>Title:</h4>
+                <input class="form-group" name="title" type="text" ng-model="title" placeholder="enter title">
+            </div>
+            <div class="form-group">
+                <h4>Reference Number:</h4>
+                <input class="form-group" name="referenceNo" type="text" ng-model="referenceNo" placeholder="enter reference number">
+            </div>
+            <div class="form-group">
+                <h4>Collaborations:</h4>
+                <input class="form-group" name="collabs" type="text" ng-model="collabs" placeholder="enter if any">
+            </div>
+            <div class="form-group">
+                <h4>Mentors:</h4>
+                <input class="form-group" name="mentors" type="text" ng-model="mentors" placeholder="Enter the names">
+            </div>
+            <div class="form-group">
+                <h4>Journal:</h4>
+                <input class="form-group" name="journal" type="text" ng-model="journal" placeholder="Enter journal">
+            </div>
+            <div class="form-group">
+                <h4>Number Citations</h4>
+                <input class="form-group" name="numCitations" type="number" ng-model="numCitations" placeholder="Enter citations">
+            </div>
+            <h3>Certificates:(if any)</h3>
+            <div class="form-group">
+                <h4>Title:</h4>
+                <input class="form-group" name="title" type="text" ng-model="title" placeholder="enter title">
+            </div>
+            <div class="form-group">
+                <h4>Provider:</h4>
+                <input class="form-group" name="provider" type="text" ng-model="provider" placeholder="Enter provider">
+            </div>
+            <div class="form-group">
+                <h4>Year:</h4>
+                <input class="form-group" name="year" type="number" ng-model="year" placeholder="Enter Year">
+            </div>
+            <h4>Personal Projects:(if any)</h4>
+            <div class="form-group">
+                <h4>Title:</h4>
+                <input class="form-group" name="title" type="text" ng-model="title" placeholder="enter Title">
+            </div>
+            <div class="form-group">
+                <h4>Description:</h4>
+                <input class="form-group" name="Description" type="text" ng-model="Description" placeholder="Enter Description">
+            </div>
+            <h3>Skills of Interest:</h3>
+            <div class="form-group">
+                <h4>Areas:</h4>
+                <input class="form-group" name="areas" type="text" ng-model="areas" placeholder="enter if any">
+            </div>
+            <div class="form-group">
+                <h4>Keywords:</h4>
+                <input class="form-group" name="keywords" type="text" ng-model="keywords" placeholder="enter keywords">
+            </div>
+            <div class="form-group">
+                <h4>Hobbies:</h4>
+                <input class="form-group" name="hobbies" type="text" ng-model="hobbies" placeholder="Enter Hobbies">
+            </div><br>
+            <input type="submit" ng-click="myFunction()">
+        </form>
+    </div>
+</div>

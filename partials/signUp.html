@@ -1,0 +1,42 @@
+<h1><mark><i>SIGN UP</i></mark></h1>
+<style>
+    input.ng-invalid {
+        background-color:lightblue;
+    }
+    input.ng-valid {
+        background-color:pink;
+    }
+</style>
+<form name="myForm" novalidate>
+
+    <h4>username:</h4>
+    <input type="text" name="username" ng-model="username" placeholder="Enter Username" required>
+    <span style="color:red" ng-show="myForm.username.$dirty && myForm.username.$invalid">
+            <span ng-show="myForm.username.$error.required">Username is Required.</span>
+        </span>
+
+    <h4>Email:</h4>
+    <input type="email" name="email" ng-model="email" placeholder="Enter Email Address" required>
+    <span style="color:red" ng-show="myForm.email.$dirty && myForm.email.$invalid">
+            <span ng-show="myForm.email.$error.required">Email is Required.</span>
+            <span ng-show="myForm.email.$error.email">Invalid email address.</span>
+        </span>
+
+    <h4>Password:</h4>
+    <input type="password" name="password" ng-model="password" placeholder="Enter Password" required>
+    <span style="color:red" ng-show="myForm.password.$dirty && myForm.password.$invalid">
+        <span ng-show="myForm.password.$error.required">password is Required.</span>
+        <span ng-show="myForm.password.$error.password">Invalid password.</span>
+    </span>
+
+    <br>
+    <p>
+
+        <button type="button" ng-click="myFunction1()"
+                ng-disabled="myForm.username.$dirty && myForm.username.$invalid || myForm.email.$dirty && myForm.email.$invalid">Submit(if student)</button>
+        <button type="button" ng-click="myFunction2()"
+                ng-disabled="myForm.username.$dirty && myForm.username.$invalid || myForm.email.$dirty && myForm.email.$invalid">Submit(if professor)</button>
+
+    </p>
+
+</form>

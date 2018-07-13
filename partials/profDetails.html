@@ -1,0 +1,98 @@
+<h1><mark><i>PROFESSOR DETAILS</i></mark></h1>
+<style>
+    input{
+        background-color: lightblue;
+    }
+</style>
+<div class="container container-table">
+    <div class="cont vertical-center-row">
+        <form class="myForm1" name="detailsForm">
+            <h3 class="text-center form-group"><mark>Professor Basic Information</mark></h3>
+            <div class="form-group">
+                <h4>Username:</h4>
+                <input class="form-group" name="username" type="text" ng-model="username" placeholder="Enter username" required>
+                <span style="color:red">This is Required</span>
+            </div>
+            <div class="form-group">
+                <h4>Firstname:</h4>
+                <input class="form-group" name="firstName" type="text" ng-model="firstName" placeholder="Enter FirstName">
+            </div>
+            <div class="form-group">
+                <h4>Lastname:</h4>
+                <input class="form-group" name="lastName" type="text" ng-model="lastName" placeholder="Enter lastName">
+            </div>
+            <div class="form-group">
+                <h4>State:</h4>
+                <input class="form-group" name="state" type="text" ng-model="state" placeholder="Enter State">
+            </div>
+            <div class="form-group">
+                <h4>City:</h4>
+                <input class="form-group" name="city" type="text" ng-model="city" placeholder="Enter City">
+            </div>
+            <div class="form-group">
+                <h4>Gender:</h4>
+                <input class="form-group" name="gender" type="text" ng-model="gender" placeholder="Enter Gender">
+            </div>
+            <div class="form-group">
+                <h4>Age:</h4>
+                <input class="form-group" name="age" type="number" ng-model="age" placeholder="Enter Age">
+                <span style="color:red">This is Required</span>
+            </div>
+            <div class="form-group">
+                <h4>MobileNo:</h4>
+                <input class="form-group" name="mobileNo" type="text" ng-model="mobileNo" placeholder="Enter Mobile Number">
+            </div>
+            <div class="form-group">
+                <h4>Institute:</h4>
+                <input class="form-group" name="institute" type="text" ng-model="institute" placeholder="Enter Institute">
+            </div>
+            <div class="form-group">
+                <h4>Department:</h4>
+                <input class="form-group" name="department" type="text" ng-model="department" placeholder="Enter Department">
+            </div>
+            <div class="form-group">
+                <h4>Areas:</h4>
+                <input class="form-group" name="areas" type="text" ng-model="areas" placeholder="Enter Ares Of Interest">
+            </div>
+            <div class="form-group">
+                <h4>WebsiteLinks:</h4>
+                <input class="form-group" name="websiteLinks" type="text" ng-model="websiteLinks" placeholder="Enter WebsiteLinks">
+            </div>
+        </form>
+        <form class="myForm2" name="detailsForm">
+            <h3 class="text-center form-group"><mark>Professor Detailed Information</mark></h3>
+            <div class="form-group">
+                <h4>Username:</h4>
+                <input class="form-group" name="username" type="text" ng-model="username" placeholder="Enter Username">
+            </div>
+            <div class="form-group">
+                <h4>Areas:</h4>
+                <input class="form-group" name="areas" type="text" ng-model="areas" placeholder="Enter Areas">
+            </div>
+            <div class="form-group">
+                <h4>Keywords:</h4>
+                <input class="form-group" name="keywords" type="text" ng-model="keywords" placeholder="Enter Keywords">
+            </div>
+            <div class="form-group">
+                <h4>Minimum Work Experience</h4>
+                <input class="form-group" name="minWorkEx" type="number" ng-model="minWorkEx" placeholder="Enter Min Work Experience">
+                <span style="color:red">This is Required</span>
+            </div>
+            <div class="form-group">
+                <h4>Minimum Years Of Study</h4>
+                <input class="form-group" name="minYearOfStudy" type="number" ng-model="minYearOfStudy" placeholder="Enter Min Years Of Study">
+                <span style="color:red">This is Required</span>
+            </div>
+            <div class="form-group">
+                <h4>Minimum CGPA</h4>
+                <input class="form-group" name="minCgpa" type="number" ng-model="minCgpa" placeholder="Enter Min Cgpa">
+                <span style="color:red">This ia Required</span>
+            </div>
+            <div class="form-group">
+                <h4>Branch:</h4>
+                <input class="form-group" name="branch" type="text" ng-model="branch" placeholder="Enter Branch">
+            </div><br>
+            <input type="submit" ng-click="myFunction()">
+        </form>
+    </div>
+</div>
