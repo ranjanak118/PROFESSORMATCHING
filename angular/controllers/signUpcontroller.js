@@ -1,4 +1,4 @@
-var app = angular.module('myApp',[]);
+var app = angular.module('myApp');
 app.controller('signUpcontroller', function($scope , $http , $window , $state){
     $scope.username = "";
     $scope.email = "";

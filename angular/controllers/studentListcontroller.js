@@ -1,4 +1,4 @@
-var app=angular.module('myApp',[]);
+var app=angular.module('myApp');
 app.controller('studentListcontroller',function($scope , $http){
     $scope.studentList = {};
     $http({

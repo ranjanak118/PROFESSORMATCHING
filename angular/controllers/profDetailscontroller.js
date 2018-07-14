@@ -1,4 +1,4 @@
-var app = angular.module('myApp', []);
+var app = angular.module('myApp');
 app.controller('profDetailscontroller',function($scope , $http , $state){
     $scope.username="";
     $scope.firstName="";
